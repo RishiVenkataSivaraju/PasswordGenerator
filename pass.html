@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="C:\Users\sivar\Downloads\lock.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="pass.css" />
+    <title>PASSWORD</title>
+  </head>
+  <body>
+    <h1><u>PASSWORD</u> <br />GENERATOR</h1>
+    <form id="input">
+      <span class="css"
+        ><input
+          placeholder="Enter The Length Of The Passowrd"
+          type="number"
+          class="length"
+          min="1"
+          name="q"
+          required
+          value=""
+      /></span>
+      <!-- <button class="btn">Enter</button> -->
+    </form>
+    <div><sup>*</sup>Click Enter for Passowrds</div>
+    <div class="divv"></div>
+    <span class="result"> Your Passowrd :</span>
+    <textarea type="text" id="myInput" rows="1" style="resize: none"></textarea>
+    <button onclick="myFunction()" class="clipboard">Copy To Clipboard</button>
+    <script src="pass.js"></script>
+  </body>
+</html>

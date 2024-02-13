@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200127/pngtree-tropical-and-palm-leaves-in-vibrant-bold-gradient-holographic-colors-image_328463.jpg");
+    background-image: url("data:image/jpeg;base64,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");
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/010/833/420/small/abstract-art-vibrant-color-liquid-blurred-background-with-lines-wave-pattern-texture-vector.jpg");  */
+    /* background-image: url("https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&w=600"); */
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/767/726/541/purple-color-burst-hd-wallpaper-wallpaper-preview.jpg"); */
+    /* background-image: url("C:\Users\sivar\OneDrive\Pictures\wallpaperflare.com_wallpaper.jpg"); */
+	background-image: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+	background-color: white;
+
+}
+h1{
+	font-size: 6vw;
+	font-weight: 900;
+	color: #0a04c3;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	margin-left: 33vw;
+	margin-top: 50px;
+	letter-spacing: 5px;
+}
+/* .length{
+	border: solid black 1px;
+	border-radius:20px;
+	padding-left: 35%;
+	/* padding-left: 60px;
+	padding-right: 60px;
+	padding-top:13px ; */
+	/* box-shadow: 10px 23px 57px 0px rgba(14, 62, 219, 0.57); */
+	/* box-shadow: 10px 10px 71px 0px #8783cf;
+	margin-top: 60px; */
+.length{
+		width: 33%;
+		height: 35px;
+		margin-left: 30vw;
+		margin-top: 40px;
+		border: 1px solid black;
+		border-radius: 18px;
+		color: black;
+		box-shadow: 10px 10px 71px 0px #8783cf;
+		box-shadow: -21px -8px 41px 0px rgba(81,74,217,1);
+		box-shadow: -11px -5px 41px 0px rgb(141, 136, 243);
+		transform: translateY(-4px);	
+	}
+span{
+	font-size: xx-large;
+	margin-left: 7px;
+	transform: translateY(-20px);
+}
+button{
+	color: white;
+	background-color: rgb(93, 93, 241);
+	padding-left: 15px;
+	padding-right:15px ;
+	padding-top:5px;
+	padding-bottom: 5px;
+	border: none;
+	border-radius: 15px;
+	transform:  translateY(-5PX) translateX(10px);
+}
+button:hover{
+	border: 2px solid black;
+	box-shadow: 0 0.5em 0.5em -0.4em #0631da;
+	padding:3px 13px 3px 13px;
+}
+div{
+	margin-top: 10px;
+	margin-left: 40%;
+}
+.divv{
+	margin-top: 30px;
+	margin-left: 550px;
+}
+@media(width <= 821px ){
+	h1{
+		font-size: 6vw;
+	font-weight: 900;
+	color: #0a04c3;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	margin-left: 40vw;
+	margin-top: 50px;
+	letter-spacing: 5px;
+	}
+	body{
+		background-image: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg");
+    background-repeat: no-repeat;
+    background-size: 230vh;
+    font-family: 'Oswald', sans-serif;
+	background-color: white;
+	}
+	.length{
+		width: 32vw;
+		height: 35px;
+		margin-left: 30%;
+		margin-top: 40px;
+		border: 1px solid black;
+		border-radius: 18px;
+		color: black;
+		box-shadow: 10px 10px 71px 0px #8783cf;
+		box-shadow: -21px -8px 41px 0px rgba(81,74,217,1);
+		box-shadow: -11px -5px 41px 0px rgb(141, 136, 243);
+		transform: translateY(-4px);	
+	}
+	div{
+		margin-top: 10px;
+		margin-left: 40%;
+		font-size: x-small;
+	}
+}
+.result{
+	font-size: xx-large;
+	color: #0a04c3;
+	margin-left: 7px;
+	transform: translateY(-20px);
+	margin-left: 380px;
+}
+textarea{
+	transform: translateY(1px);
+	border-radius: 5px;
+}
+.clipboard{
+	transform: translateY(-6px);
+	margin-left: 10px;
+}
